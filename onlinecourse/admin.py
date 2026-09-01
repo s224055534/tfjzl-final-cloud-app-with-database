@@ -15,7 +15,7 @@ class LessonInline(admin.StackedInline):
     model = Lesson
     extra = 5
 
-class QuestionAdmin(admin.ModelAdmin0):
+class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
     list_display = ['content']
 # Register your models here.
